@@ -1,5 +1,11 @@
+@import url('./fonts.css');
+
 body{
     margin: 0 auto;
+    font-size: 14px;
+    color: #828282;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-style: normal;
 }
 
 a{
@@ -25,10 +31,11 @@ button{
     background-color: #03a8cb;
     color: #fff;
     text-transform: uppercase;
-    padding: 1em 1.2em;
+    padding: 0.5em 1em;
     border: 1px solid #03a8cb;
     box-sizing: border-box;
     border-radius: 2em;
+    outline: none;
 }
 
 .sec-headerTitle{
@@ -38,7 +45,7 @@ button{
 }
 
 .icon-circle{
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
     background-color: #03a8cb;
     border-radius: 100%;
     height: 90px;
@@ -60,10 +67,18 @@ button{
     display: block;
 }
 
+.siteTitle{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
 .sectionTitle:after{
     display: block;
     content: 'lorem ipsum dolor sit amet';
-    color: #c5c5c5;
+    color: #828282;
+    font-size: 18px;
+    font-weight: normal;
     text-transform: none;
 }
 
@@ -72,30 +87,52 @@ button{
     margin: 0 auto;
     background-image: url("../images/planet.png");
     background-size: cover;
-    text-transform: uppercase;
 }
 
 .navbar{
     background-color: #03a8cb;
     color: #fff;
-    padding: 30px 0;
+    font-size: 16px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .navbar-links{
-    margin: 5px 25px;
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    align-items: stretch;
+    padding: 30px 20px;
 }
 
 .morbiSemuisBlock{
-    margin: 150px auto 0;
+    margin: 135px auto 0;
     max-width: 630px;
     text-align: center;
     color: #fff;
 }
+
+.morbiSemuisBlock>div{
+    margin-bottom: 10px;
+}
+
+
 .morbiSemuisBlock>button{
     margin-bottom: 75px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.morbiSemuisBlock-title{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.morbiSemuisBlock-paragraph{
+    font-size: 28px;
 }
 
 .info-sec{
@@ -111,26 +148,28 @@ button{
     width: 270px;
 }
 
+
 .employee-image{
     height: 180px;
-    background-size: cover;
-}
-
-.employee-image[empl1]{
-    background-image: url("../images/employee1.png");
-}
-.employee-image[empl2]{
-    background-image: url("../images/employee2.png");
-}
-.employee-image[empl3]{
-    background-image: url("../images/employee3.png");
-}
-.employee-image[empl4]{
-    background-image: url("../images/employee4.png");
 }
 
 .employee-info{
-    margin: 35px 20px;
+    margin: 20px;
+}
+ .employee-info-title{
+     font-size: 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #3b3e4a;
+ }
+
+ .employee-info-paragraph{
+     font-size: 14px;
+ }
+
+.more-button{
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .cras-sec-grid{
@@ -144,6 +183,11 @@ button{
     width: 570px;
 }
 
+.services-title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .cras-sec-icon{
     background-color: #3b3e4a;
     height: 70px;
@@ -151,9 +195,12 @@ button{
 }
 
 .cras-sec-paragraph{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 150px;
     margin-left: 30px;
-    font-size: 8px;
 }
 
 .cras-sec-grid-element{
@@ -171,7 +218,7 @@ button{
     margin-bottom: 40px;
 }
 
-.pazzle-bg{
+.cras-icon-bg{
     background-color: #3b3e4a;
     border-radius: 5px;
     height: 70px;
@@ -181,61 +228,61 @@ button{
     align-items: center;
 }
 
-.pazzle-icon{
+.cras-icon{
     fill: #fff;
     height: 25px;
     width: 25px;
 }
 
-div[colBlue]{
+.colBlue{
+    font-weight: bold;
     color: #03a8cb;
     text-transform: uppercase;
 }
 
-.aliquam-sec-navbar{
-    margin-bottom: 20px;
+
+.aliquam-sec-navbar-info{
     border: 1px solid #c5c5c5;
     border-radius: 3px;
-    padding: 10px;
     position: relative;
-    box-sizing: border-box;
     background-color: #fff;
+    margin-bottom: 10px;
 }
 
-.aliquam-sec-navbar>span{
-    color: #828282;
-    font-size: 8px;
-}
-
-.aliquam-sec-navbar>button{
+.navbarBtn{
     background-color: #03a8cb;
-    color: #fff;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    outline: none;
-    border-radius: 0 3px 3px 0;
-    height: 100%;
-    width: 40px;
     position: absolute;
-    top:0;
+    padding: 10px;
     right: 0;
-}
-
-.aliquam-sec-navbar[dark]{
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    background-color: #3b3e4a;
+    top:0;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
     color: #fff;
 }
 
-.navbarBtn[dark]{
-    border-radius: 0 3px 0 0;
+.aliquam-sec-navbar-disclosed{
+    background-color: #f0f0f0;
+    display: none;
+    padding: 20px;
 }
 
-/*.aliquam-sec-navbar-footnote{
-    padding: 20px;
-    background-color: #c5c5c5;
-}*/
+.navbarBtn:hover{
+    border-bottom-right-radius: 0;
+}
+
+.aliquam-sec-navbar-info-title{
+    padding: 10px;
+}
+
+.navbarBtn:hover + .aliquam-sec-navbar-info-title {
+ background-color: #3b3e4a;
+    color: #fff;
+}
+
+.navbarBtn:hover ~ .aliquam-sec-navbar-disclosed{
+    display: block;
+    transition: 2s;
+}
 
 .solutions-sec{
     max-width: 540px;
@@ -249,15 +296,10 @@ div[colBlue]{
 .solutions-block-image{
     height: 210px;
     width: 270px;
-    background-size: cover;
 }
 
-.solutions-block-image[desktop]{
-    background-image: url("../images/desktop.png");
-}
-
-.solutions-block-image[mouse]{
-    background-image: url("../images/mouse.png");
+.solutions-block-info>.sectionTitle{
+    font-size: 18px;
 }
 
 .solutions-block-info{
@@ -271,6 +313,27 @@ div[colBlue]{
 
 .contacts-input-sec,.contacts-icons-sec{
     max-width: 270px;
+}
+
+.contacts-input-block{
+    display: flex;
+}
+
+.contacts-input-block>input{
+    border: none;
+    border-radius: 2em 0 0 2em;
+    padding: 5px;
+}
+
+.contacts-input-block>.more-button{
+    border-radius: 0 2em 2em 0;
+    padding: 10px;
+}
+
+.contacts-info>.sectionTitle,.contacts-input-sec>.sectionTitle,.contacts-icons-sec>.sectionTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .contacts-info>.sectionTitle:after,.contacts-input-sec>.sectionTitle:after,.contacts-icons-sec>.sectionTitle:after{
@@ -295,8 +358,8 @@ div[colBlue]{
     justify-content: left;
 }
 
-.twitter,.linkedin,.facebook{
-    margin: 0 10px;
+.contacts-icons-block-element{
+    margin: 0 5px;
     height: 20px;
     width: 20px;
     fill:#fff;
