@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4af50bc2-7cae-4113-a94a-2e5a23b42577" name="Default Changelist" comment="" />
+    <list default="true" id="4af50bc2-7cae-4113-a94a-2e5a23b42577" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1jE6LucH3ltGRCJDiVqgviv9crx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/TMS courses/tms-html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -39,13 +46,30 @@
       <updated>1603356851719</updated>
       <workItem from="1603356852915" duration="1281000" />
       <workItem from="1603432406804" duration="32761000" />
+      <workItem from="1603822007793" duration="1357000" />
     </task>
+    <task id="LOCAL-00001" summary="added responsiveness, hover effects on buttons, navigation items">
+      <created>1603822055834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603822055834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added responsiveness, hover effects on buttons, navigation items" />
+    <option name="LAST_COMMIT_MESSAGE" value="added responsiveness, hover effects on buttons, navigation items" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1603822055298">
+      <screen x="0" y="0" width="1280" height="688" />
+    </state>
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.688@0.0.1280.688" timestamp="1603822055298" />
     <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1603434328811">
       <screen x="0" y="0" width="1280" height="688" />
     </state>
@@ -54,5 +78,9 @@
       <screen x="0" y="0" width="1280" height="688" />
     </state>
     <state x="520" y="242" key="Github.ShareDialog/0.0.1280.688@0.0.1280.688" timestamp="1603480335685" />
+    <state x="233" y="64" key="Vcs.Push.Dialog.v2" timestamp="1603822068897">
+      <screen x="0" y="0" width="1280" height="688" />
+    </state>
+    <state x="233" y="64" key="Vcs.Push.Dialog.v2/0.0.1280.688@0.0.1280.688" timestamp="1603822068897" />
   </component>
 </project>

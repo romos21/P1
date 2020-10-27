@@ -9,8 +9,13 @@ body{
 }
 
 a{
+    color: #fff;
     outline: none;
     text-decoration: none;
+}
+
+a:visited{
+    color: #fff;
 }
 
 hr{
@@ -38,6 +43,11 @@ button{
     outline: none;
 }
 
+button:hover{
+    background-color: #3b3e4a;
+}
+
+
 .sec-headerTitle{
     max-width: 1170px;
     margin: 30px auto;
@@ -53,6 +63,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.icon-circle:hover{
+    background-color: #3b3e4a;
 }
 
 .rocketIcon{
@@ -99,12 +113,22 @@ button{
     align-items: stretch;
 }
 
-.navbar-links{
+.navbar-links, .burger-menu{
     text-transform: uppercase;
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     align-items: stretch;
     padding: 30px 20px;
+    text-align: center;
+}
+
+.navbar-links:hover, .burger-menu:hover{
+    background-color: #fff;
+    color: #03a8cb;
+}
+
+.burger-menu{
+    display: none;
 }
 
 .morbiSemuisBlock{
@@ -150,7 +174,7 @@ button{
 
 
 .employee-image{
-    height: 180px;
+    width: 100%;
 }
 
 .employee-info{
@@ -180,7 +204,7 @@ button{
 
 
 .aliquam-sec, .cras-sec{
-    width: 570px;
+    width: 50%;
 }
 
 .services-title{
@@ -190,8 +214,11 @@ button{
 
 .cras-sec-icon{
     background-color: #3b3e4a;
-    height: 70px;
-    width: 70px;
+    width: 100%;
+}
+
+.cras-icon-bg:hover{
+    background-color: #03a8cb;
 }
 
 .cras-sec-paragraph{
@@ -221,8 +248,7 @@ button{
 .cras-icon-bg{
     background-color: #3b3e4a;
     border-radius: 5px;
-    height: 70px;
-    width: 70px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,6 +296,7 @@ button{
     border-bottom-right-radius: 0;
 }
 
+
 .aliquam-sec-navbar-info-title{
     padding: 10px;
 }
@@ -294,8 +321,7 @@ button{
 }
 
 .solutions-block-image{
-    height: 210px;
-    width: 270px;
+    width: 100%;
 }
 
 .solutions-block-info>.sectionTitle{
@@ -366,6 +392,74 @@ button{
     position: relative;
 }
 
+@media (max-width: 867px) {
+    body{
+        font-size: 18px;
+    }
+    .navbar{
+
+    }
+    .info-sec{
+        display: block;
+        margin: 40px 20px;
+    }
+    .info-sec>*{
+        margin: auto;
+    }
+    .employee-block {
+        width: 100%;
+    }
+
+    .employee-info-paragraph{
+        font-size: 22px;
+    }
+
+    .navbar{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .burger-menu:hover ~ .navbar-links{
+        display: block;
+    }
+    .navbar-links:hover{
+        display: block;
+    }
+
+    .cras-icon{
+        height: 70px;
+        width: 70px;
+    }
+
+    .aliquam-sec, .cras-sec{
+        width: 100%;
+    }
+
+    .cras-sec-grid{
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        grid-template-columns: 100%;
+    }
+    .cras-sec-grid-element{
+        margin: 15px auto;
+    }
+    .contacts-info{
+        text-align: center;
+    }
+    .solutions-block{
+        display: block;
+    }
+    .solutions-sec{
+        margin-bottom: 10px;
+    }
+    .solutions-block-info{
+        max-width: 100%;
+        margin: 0;
+    }
+}
 
 
 

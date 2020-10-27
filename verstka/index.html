@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
     <title>Title</title>
     <link rel="stylesheet" href="assets/styles/style.css"/>
 </head>
@@ -121,7 +122,7 @@
     </symbol>
 </svg>
 <header>
-    <section class="sec-headerTitle">
+    <section class="sec-headerTitle" id="home">
         <span class="icon-circle">
             <svg class="rocketIcon"><use xlink:href="#rocket"></use></svg>
         </span>
@@ -131,14 +132,15 @@
 <main>
     <section class="bgPlanetSection">
         <nav class="navbar">
-            <a class="navbar-links">home</a>
-            <a class="navbar-links">about</a>
-            <a class="navbar-links">services</a>
-            <a class="navbar-links">solutions</a>
-            <a class="navbar-links">portfolio</a>
-            <a class="navbar-links">contact</a>
+            <a class="burger-menu">menu</a>
+            <a class="navbar-links" href="#home">home</a>
+            <a class="navbar-links" href="#about">about</a>
+            <a class="navbar-links" href="#services">services</a>
+            <a class="navbar-links" href="#solutions">solutions</a>
+            <a class="navbar-links" href="#portfolio">portfolio</a>
+            <a class="navbar-links" href="#contacts">contact</a>
         </nav>
-        <section class="morbiSemuisBlock">
+        <section class="morbiSemuisBlock" id="about">
             <div class="morbiSemuisBlock-title">morbi semuis</div>
             <div class="morbiSemuisBlock-paragraph">Praesent dapibus, neque id cursus faucibus tor tas augue eu
                 vulputate
@@ -146,7 +148,7 @@
             <button>facilis</button>
         </section>
     </section>
-    <section class="info-sec">
+    <section class="info-sec" id="services">
         <div class="employee-block">
             <img src="assets/images/employee1.png" class="employee-image"/>
             <div class="employee-info">
@@ -265,7 +267,7 @@
                 </div>
             </div>
         </section>
-        <section class="aliquam-sec">
+        <section class="aliquam-sec" id="solutions">
             <div class="sectionTitle services-title">Aliquam tincidunt</div>
             <div class="aliquam-sec-navbar-info">
                 <span class="navbarBtn">+</span>
@@ -306,7 +308,7 @@
         </section>
     </section>
     <hr/>
-    <section class="info-sec">
+    <section class="info-sec" id="portfolio">
         <section class="solutions-sec">
             <div class="solutions-block">
                 <img src="assets/images/desktop.png" class="solutions-block-image"/>
@@ -339,7 +341,7 @@
             <button class="more-button">more</button>
         </section>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <section class="info-sec">
             <section class="contacts-info">
                 <p class="sectionTitle">vitae lin</p>
