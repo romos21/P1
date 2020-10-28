@@ -45,6 +45,8 @@ button{
 
 button:hover{
     background-color: #3b3e4a;
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 
@@ -67,6 +69,7 @@ button:hover{
 
 .icon-circle:hover{
     background-color: #3b3e4a;
+    transition: 1s;
 }
 
 .rocketIcon{
@@ -125,6 +128,7 @@ button:hover{
 .navbar-links:hover, .burger-menu:hover{
     background-color: #fff;
     color: #03a8cb;
+    transition: 1s;
 }
 
 .burger-menu{
@@ -139,7 +143,7 @@ button:hover{
 }
 
 .morbiSemuisBlock>div{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -219,6 +223,7 @@ button:hover{
 
 .cras-icon-bg:hover{
     background-color: #03a8cb;
+    transition: 1s;
 }
 
 .cras-sec-paragraph{
@@ -248,7 +253,7 @@ button:hover{
 .cras-icon-bg{
     background-color: #3b3e4a;
     border-radius: 5px;
-    padding: 20px;
+    padding: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,8 +273,6 @@ button:hover{
 
 
 .aliquam-sec-navbar-info{
-    border: 1px solid #c5c5c5;
-    border-radius: 3px;
     position: relative;
     background-color: #fff;
     margin-bottom: 10px;
@@ -278,7 +281,7 @@ button:hover{
 .navbarBtn{
     background-color: #03a8cb;
     position: absolute;
-    padding: 10px;
+    padding: 11px 17px;
     right: 0;
     top:0;
     text-align: center;
@@ -287,9 +290,13 @@ button:hover{
 }
 
 .aliquam-sec-navbar-disclosed{
-    background-color: #f0f0f0;
-    display: none;
-    padding: 20px;
+    opacity: 0;
+    position: absolute;
+    padding: 0 20px;
+    border: 1px solid #c5c5c5;
+    border-top: none ;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .navbarBtn:hover{
@@ -299,38 +306,52 @@ button:hover{
 
 .aliquam-sec-navbar-info-title{
     padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
 }
 
 .navbarBtn:hover + .aliquam-sec-navbar-info-title {
  background-color: #3b3e4a;
     color: #fff;
+    border-bottom-left-radius: 0;
+    transition: all 1s;
 }
 
 .navbarBtn:hover ~ .aliquam-sec-navbar-disclosed{
-    display: block;
-    transition: 2s;
+    background-color: #f0f0f0;
 }
 
-.solutions-sec{
-    max-width: 540px;
+.aliquam-sec-navbar-disclosed:hover,.navbarBtn:hover ~ .aliquam-sec-navbar-disclosed{
+    opacity: 1;
+    padding: 20px;
+    position: static;
+    transition: all 1s;
 }
+
+.aliquam-sec-navbar-disclosed:hover{
+    background-color: #3b3e4a;
+    color: #fff;
+    transform: scale(1.1);
+    border-radius: 3px;
+}
+
 
 .solutions-block{
     display: flex;
     justify-content: space-between;
 }
 
-.solutions-block-image{
-    width: 100%;
-}
-
 .solutions-block-info>.sectionTitle{
     font-size: 18px;
 }
 
+.solutions-block-image{
+    height: 210px;
+    width: 270px;
+}
 .solutions-block-info{
-    max-width: 270px;
-    margin-left: 30px;
+    margin:0 30px;
 }
 
 .solutions-block-paragraph{
@@ -392,6 +413,21 @@ button:hover{
     position: relative;
 }
 
+@media (max-width:1170px) {
+    .info-sec{
+        margin: 40px;
+    }
+    .solutions-block{
+        display: block;
+        margin-right: 30px ;
+    }
+    .solutions-block-info{
+        margin: 0;
+    }
+    .solutions-sec{
+        margin-right: 30px ;
+    }
+}
 @media (max-width: 867px) {
     body{
         font-size: 18px;
@@ -461,6 +497,11 @@ button:hover{
     }
 }
 
+@media (max-width: 400px){
+    .aliquam-sec-navbar-info-title{
+        font-size: 12px;
+    }
+}
 
 
 
